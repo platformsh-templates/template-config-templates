@@ -6,3 +6,5 @@ that are possible, comments describing the property, and a link to the docs for 
 
 Samples have been encluded and can be identified by being enclosed by `<` and `>` 
 (e.g. `<app-name>`). These **MUST** be replaced.
+
+Properties that do not contain a value (e.g. `size:`) **MUST** be completed or removed.
