@@ -5,5 +5,5 @@
 # More information: https://docs.platform.sh/add-services.html
 # Full list of available services: https://docs.platform.sh/add-services.html#available-services
 db:
-    type: <db-service>:<version-number>
-    disk: 2048
+  type: <db-service>:<version-number>
+  disk: 2048
