@@ -1,5 +1,5 @@
 # template-config-templates
-Configuration templates to start from when creating configuration files for official Platform.sh templates. Includes ALL top-level properties
+Configuration templates to start from when creating configuration files for official [Platform.sh](https://platform.sh/) templates. Includes ALL top-level properties
 that are possible, comments describing the property, and a link to the docs for more information on the property. 
 
 ## Description
