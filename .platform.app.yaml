@@ -18,7 +18,7 @@ size:
 # side is in the form `<service name>:<endpoint name>`.
 # More information: https://docs.platform.sh/create-apps/app-reference.html#relationships
 relationships:
-  database: '<service name>:<endpoint name>'
+  database: '<service-name>:<endpoint-name>'
 
 # The size of the persistent disk of the application (in MB). Minimum value is 128.
 disk: 2048
@@ -106,6 +106,10 @@ hooks:
   # The deploy hook is run after the app container has been started, but before it has started accepting requests.
   # More information: https://docs.platform.sh/create-apps/hooks/hooks-comparison.html#deploy-hook
   deploy: |
+
+  # The post_deploy hook is run after the app container has been started and after it has started accepting requests.
+  # More information: https://docs.platform.sh/create-apps/hooks/hooks-comparison.html#deploy-hook
+  post_deploy: |
 
 # Scheduled tasks for the app.
 # More information: https://docs.platform.sh/create-apps/app-reference.html#crons

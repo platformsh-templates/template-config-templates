@@ -2,6 +2,7 @@
 #
 # Each route describes how an incoming URL is going
 # to be processed by Platform.sh.
+# The first route in this file is the default url associated to your project in the console
 # More information: https://docs.platform.sh/define-routes.html
 "https://{default}/":
   type: upstream
