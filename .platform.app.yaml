@@ -36,6 +36,18 @@ mounts:
 # The web key configures the web server running in front of your app.
 # More information: https://docs.platform.sh/create-apps/app-reference.html#web
 web:
+  # Commands are run once after deployment to start the application process.
+  # More information: https://docs.platform.sh/create-apps/app-reference.html#web-commands 
+  commands:
+    # The command to launch your app. If it terminates, it’s restarted immediately.
+    start: "<example-start-command>"
+  
+  # More information: https://docs.platform.sh/configuration/app-containers.html#upstream
+  upstream:
+    # Whether your app should speak to the webserver via TCP or Unix socket. Defaults to tcp
+    # More information: https://docs.platform.sh/create-apps/app-reference.html#where-to-listen 
+    socket_family: unix
+
   # Each key in locations is a path on your site with a leading /.
   # More information: https://docs.platform.sh/create-apps/app-reference.html#locations
   locations:
