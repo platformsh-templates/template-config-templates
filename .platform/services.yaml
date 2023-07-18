@@ -4,6 +4,8 @@
 # to power your Platform.sh project.
 # More information: https://docs.platform.sh/add-services.html
 # Full list of available services: https://docs.platform.sh/add-services.html#available-services
-db:
-  type: <db-service>:<version-number>
+<service-name>:
+  type: <service-type>:<version-number>
   disk: 2048
+  configuration:
+    # example of configuration for Redis service: https://docs.platform.sh/add-services/redis.html#eviction-policy
